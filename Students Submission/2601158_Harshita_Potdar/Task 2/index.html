@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sidebar"> <!-- Sidebar -->
+    <div class="logo"><!-- Logo and Website Name -->
+        <img src="17.png">
+        <h2>Student Portal</h2>
+    </div>
+    <div><!-- Navigation Links -->
+        <a href="#" class="active">Dashboard</a><!--shows current page-->
+        <a href="#"><img src="12.png"> Assignments</a><!--navigation link for assignments page-->
+        <a href="#"><img src="11.png"> Courses</a><!--navigation link for courses page-->
+        <a href="#"><img src="10.png"> Progress</a><!--navigation link for progress page-->
+        <a href="#"><img src="09.png"> Profile</a><!--navigation link for profile page-->
+        <a href="#" class="logout"><img src="08.png"> Logout</a>
+    </div>
+</div>
+
+    <main class="main"><!-- Main Content -->
+        <header class="topbar"><!-- Top Navigation Bar -->
+            <h2>Dashboard</h2>
+            <div><!-- User Profile -->
+                <img src="16.png">
+                <img src="15.png">
+                Prathmesh
+            </div>
+        </header>
+        <!-- Welcome Banner -->
+        <section class="banner"><!-- it groups related content together and class identifies banner for css styling-->
+            <div>
+                <h1>Welcome Back, Prathmesh!</h1>
+                <p>Continue your learning journey and complete your pending assignments</p>
+            </div>
+            <img src="18.png">
+        </section>
+        <!-- Statistics Cards -->
+        <section class="stats"><!--Creates a section for all four statistics cards-->
+            <div class="stat c1"><!-- Courses Card -->
+                <span><img src="04.png"></span><!--span groups the icon-->
+                <div>
+                    <b>3</b>
+                    <small>Courses</small>
+                </div>
+            </div>
+            <div class="stat c2"><!-- Assignments Card -->
+                <span><img src="03.png"></span><!--span groups the icon-->
+                <div>
+                    <b>12</b>
+                    <small>Assignments</small>
+                </div>
+            </div>
+            <div class="stat c3"><!-- Progress Card -->
+                <span><img src="02.png"></span><!--span groups the icon-->
+                <div>
+                    <b>78%</b>
+                    <small>Progress</small>
+                </div>
+            </div>
+            <div class="stat c4"><!-- Due Assignments Card -->
+                <span><img src="01.png"></span><!--span groups the icon-->
+                <div>
+                    <b>5</b>
+                    <small>Due This Week</small>
+                </div>
+            </div>
+        </section>
+        <!-- Courses and Assignments Section -->
+        <section class="grid"><!--creates section containing two main boxes-->
+            <div class="box"><!-- Your Courses -->
+                <h3>Your Courses</h3>
+                <!--Web Development-->
+                <div class="row"><!--Creates a row for the first assignment-->
+                    <div class="info"><!--Groups the assignment icon and its details-->
+                        <span class="ico"><img src="07.png"></span><!--ico is used to style icon containers-->
+                        <div>
+                            <b>Web Development</b>
+                            <small>HTML, CSS, JavaScript</small>
+                        </div>
+                    </div>
+                <!-- Course Progress -->
+                <div class="prog">
+                    <small>80%</small>
+                    <div class="bar">
+                        <i style="width:80%"></i>
+                    </div>
+                    </div>
+                </div>
+                <!-- Python Programming -->
+                <div class="row">
+                    <div class="info">
+                        <span class="ico"><img src="06.png"></span><!--ico is used to style icon containers-->
+                        <div>
+                            <b>Python Programming</b>
+                            <small>Basics to Advanced</small>
+                        </div>
+                    </div>
+                <!-- Course Progress -->
+                <div class="prog">
+                    <small>70%</small>
+                        <div class="bar">
+                            <i style="width:70%"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Database Systems -->
+                <div class="row">
+                    <div class="info">
+                        <span class="ico"><img src="05.png"></span><!--ico is used to style icon containers-->
+                        <div>
+                            <b>Database Systems</b>
+                            <small>SQL, Normalization, Queries</small>
+                        </div>
+                    </div>
+                <!-- Course Progress -->
+                <div class="prog">
+                    <small>85%</small>
+                        <div class="bar">
+                            <i style="width:85%"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Upcoming Assignments -->
+            <div class="box">
+                <h3>Upcoming Assignments</h3>
+                <!-- First Assignment -->
+                <div class="row">
+                    <div class="info">
+                        <span class="ico"><img src="14.png"></span><!--ico is used to style icon containers-->
+                        <div>
+                            <b>Create a Responsive Landing Page</b>
+                            <small>Due: 20 Nov 2026</small>
+                        </div>
+                    </div>
+                    <span class="badge">Pending</span>
+                </div>
+                <!-- Second Assignment -->
+                <div class="row">
+                    <div class="info">
+                        <span class="ico"><img src="14.png"></span><!--ico is used to style icon containers-->
+                        <div>
+                            <b>Array Problem Set</b>
+                            <small>Due: 22 Nov 2026</small>
+                        </div>
+                    </div>
+                    <span class="badge">Pending</span>
+                </div>
+                <!-- Third Assignment -->
+                <div class="row">
+                    <div class="info">
+                        <span class="ico"><img src="14.png"></span>
+                        <div>
+                            <b>DBMS SQL Queries</b>
+                            <small>Due: 25 Nov 2026</small>
+                        </div>
+                    </div>
+                    <span class="badge">Pending</span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

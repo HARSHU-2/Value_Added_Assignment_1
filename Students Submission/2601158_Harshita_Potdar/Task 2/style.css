@@ -1,0 +1,229 @@
+* {/*Applies styles to all HTML elements*/
+    margin:0;
+    padding:0;
+    box-sizing:border-box;/*Padding and border within the element's total width and height*/
+    font-family:Arial, sans-serif;
+}
+
+body {
+    display:flex;/*Places the sidebar and main content next to each other*/
+    min-height:100vh;
+    background-color:#f4f5f9;/*Gives the webpage a light grey background*/
+    color:#1e202c;
+}
+
+.sidebar {
+    width:200px;
+    min-height:100vh;
+    padding:20px 12px;
+    background-color:#1c1f4c;
+    color:white;
+}
+
+.logo {
+    display:flex;/*Used to place the logo image and website name in one row*/
+    align-items:center;/*Aligns the image and text in the centre*/
+    gap:8px;
+    margin-bottom:25px;
+}
+
+.logo img {
+    width:30px;
+    height:30px;
+}
+
+.logo h2 {
+    font-size:18px;
+}
+
+.sidebar a {
+    display:block;
+    padding:10px;
+    margin-bottom:6px;
+    color:#cbd0e6;
+    text-decoration:none;/*Removes the default underline from links*/
+    border-radius:8px;/*Gives rounded corners to links*/
+}
+
+.sidebar a.active {
+    background-color:#5856d6;
+    color:white;
+}
+
+.sidebar a.logout {
+    border-top:1px solid #555982;
+    margin-top:20px;
+    padding-top:15px;
+}
+
+.sidebar a img {
+    width:16px;
+    height:16px;
+    margin-right:8px;
+    vertical-align:middle;/*Aligns the icon vertically with the text*/
+}
+
+.main {
+    flex:1;
+    padding:20px 25px;
+}
+
+.topbar {/*Selects the top nav bar*/
+    display:flex;
+    align-items:center;
+    justify-content:space-between;/*Places the Dashboard heading on the left and user profile on the right*/
+    padding-bottom:12px;
+    margin-bottom:18px;
+    border-bottom:1px solid #ddd;
+}
+
+.banner {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;/*Places the text on the left and image on the right*/
+    padding:20px 25px;
+    margin-bottom:18px;
+    background-color:#e3e2f5;
+    border-radius:12px;/*Makes the banner corners rounded*/
+}
+
+.banner h1 {
+    font-size:23px;
+    margin-bottom:6px;
+}
+
+.banner p {
+    font-size:14px;
+    color:#555;
+}
+
+.banner img {
+    width:140px;
+}
+
+.stats {/*Selects the section containing all four statistics cards*/
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);/*Creates four equal-width columns*/
+    gap:12px;
+    margin-bottom:18px;
+}
+
+.stat {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:14px;
+    border-radius:10px;
+}
+
+.stat img {
+    width:22px;
+    height:22px;
+}
+
+.stat b {
+    display:block;
+    font-size:19px;
+}
+
+.c1 {/*Courses*/
+    background-color:#e6e4f8;
+}
+
+.c2 {/*Assignments*/
+    background-color:#dff3e8;
+}
+
+.c3 {/*Progress*/
+    background-color:#fdf3d7;
+}
+
+.c4 {/*Due this week*/
+    background-color:#fbe4e6;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.box {
+    padding:16px;
+    background-color:white;
+    border:1px solid #e6e8f0;
+    border-radius:12px;
+}
+
+.box h3 {
+    font-size:16px;
+    margin-bottom:12px;
+}
+
+.row {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;/*Places the information on the left and progress or status on the right*/
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+}
+
+.row:last-child {
+    border-bottom:none;
+}
+
+.info {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.ico {
+    padding:8px;
+    background-color:#eef0fa;
+    border-radius:8px;
+}
+
+.ico img {
+    width:20px;
+    height:20px;
+    display:block;
+}
+
+.prog {
+    width:90px;
+    text-align:right;
+}
+
+.bar {
+    height:6px;
+    margin-top:5px;
+    background-color:#e4e6ef;
+    border-radius:5px;
+}
+
+.bar i {
+    display:block;
+    height:100%;
+    background-color:#4f46e5;
+    border-radius:5px;
+}
+
+small {
+    display:block;
+    color:#777;
+    font-size:12px;
+}
+
+.badge {
+    padding:4px 9px;
+    background-color:#fde6e8;
+    color:#d64550;
+    border-radius:6px;
+    font-size:12px;
+}
+
+.topbar img {
+    width:22px;
+    height:22px;
+}

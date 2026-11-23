@@ -1,0 +1,144 @@
+* { /*Applies styles to all HTML elements*/
+    margin:0;
+    padding:0;
+    box-sizing:border-box; /*Padding and border within the element's total width and height*/
+    font-family:"Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color:#f3f2f8;
+    color:#1e1e2c;
+    padding:20px 8%;
+}
+
+.navbar { /*Selects the navigation bar using its class name*/
+    display:flex;/*Used to place the navbar items in a horizontal row*/
+    justify-content:space-between;/*Used to add equal space*/
+    align-items:center;
+    padding:15px 0;
+    border-bottom: 1px solid #cbc9c9;/*Adds a thin light-grey line at the bottom*/
+}
+
+.logo {
+    display:flex;/*Used to place the logo image and website name in one row*/
+    align-items:center;/*Aligns the image and text in the centre*/
+    gap:10px;/*Adds space between text and image*/
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#2b2b3d;
+}
+
+.logo img {
+    width:35px;
+    height:35px;
+}
+
+.nav-links {
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a {
+    text-decoration:none;/*Removes the default underline from links*/
+    color:#555;
+    padding-bottom:5px;
+}
+
+.nav-links a.active {/*Selects the link having both nav-links as its parent class and active as its own class*/
+    color:#4f2cc9;
+    border-bottom:2px solid #4f2cc9;
+}
+
+.button, .button-outline {/*Applies the same styles to both buttons*/
+    display:inline-block;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.button {
+    background-color:#4f2cc9;
+    color:white;
+}
+
+.button-outline {/*Selects the outline of button*/
+    border:1px solid #4f2cc9;
+    color:#4f2cc9;
+}
+
+.hero {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    margin:50px 0;
+}
+
+.hero-content {/*Selects the container holding the heading, paragraph and buttons*/
+    max-width:520px;
+}
+
+.hero-content h1 {
+    font-size:3rem;
+    margin-bottom:18px;
+}
+
+.hero-content h1 span {
+    color:#4f2cc9;
+}
+
+.hero-content p {
+    color:#5a5a6e;
+    font-size:1.1rem;
+    line-height:1.5;
+    margin-bottom:30px;
+}
+
+.hero-buttons {
+    display:flex;
+    gap:15px;
+}
+
+.hero-image img {
+    width:420px;
+    border-radius:16px;
+}
+
+.features {/*Selects the features section containing all three cards*/
+    display: grid;/*Arranges the cards in a grid layout*/
+    grid-template-columns: repeat(3, 1fr);/*Creates three equal-width columns*/
+    gap: 25px;
+    background-color: #ede9ff;
+    padding: 25px 8vw;
+    margin: 0 -8vw;
+}
+
+.card {/*Selects each individual feature card*/
+    background-color:#f8f7fc;
+    padding:30px 20px;
+    border-radius:12px;
+    border:1px solid #b8b7b7;
+    text-align:center;
+}
+
+.card .icon {
+    margin-bottom:12px;
+}
+
+.card .icon img {
+    width:55px;
+    height:55px;
+    display:block;
+    margin:auto;
+}
+
+.card h3 {
+    font-size:1.15rem;
+    margin-bottom:8px;
+}
+
+.card p {
+    color:#666;
+    font-size:0.95rem;
+}
